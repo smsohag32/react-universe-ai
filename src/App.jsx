@@ -17,7 +17,6 @@ function App() {
       {/* card section */}
       <Card></Card>
       {/* button */}
-      <Button>See More </Button>
     </div>
   );
 }
