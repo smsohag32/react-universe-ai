@@ -4,6 +4,7 @@ import "./App.css";
 import Button from "./components/Button/Button";
 import Card from "./components/Card/Card";
 import Header from "./components/Header/Header";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   const [count, setCount] = useState(0);

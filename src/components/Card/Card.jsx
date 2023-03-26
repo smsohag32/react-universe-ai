@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Button from "../Button/Button";
+import Modal from "../Modal/Modal";
 import SingleData from "../SingleData/SingleData";
 
 const Card = () => {
@@ -28,6 +29,7 @@ const Card = () => {
       <span className="text-center inline bg-red-300" onClick={seeMoreHandle}>
         {!showAll && <Button>Show All</Button>}
       </span>
+      <Modal></Modal>
     </>
   );
 };
