@@ -1,13 +1,8 @@
 import React from "react";
 
-const SingleData = ({
-  id,
-  name,
-  description,
-  image,
-  features,
-  published_in,
-}) => {
+const SingleData = (props) => {
+  const { id, name, description, image, features, published_in } = props;
+  const setUniqId = props.setUniqId;
   return (
     <div className="card w-full bg-base-100 border-2 shadow-xl">
       <figure>
@@ -23,7 +18,11 @@ const SingleData = ({
         </div>
         <p>{published_in}</p>
         <div className="card-actions justify-end">
-          <label htmlFor="my-modal-5" className="btn btn-accent">
+          <label
+            onClick={() => setUniqId(id)}
+            htmlFor="my-modal-5"
+            className="btn btn-accent"
+          >
             <span>Go</span>
           </label>
         </div>
